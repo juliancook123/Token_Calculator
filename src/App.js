@@ -1,17 +1,17 @@
-import React from 'react';
-import { ConnectWallet, ThirdwebProvider } from '@thirdweb-dev/react';
-import TokenCalculator from './TokenCalculator';
-import PresentValueCalculator from "./PresentValueCalculator";
+// src/App.js
+import React from "react";
+import { ThirdwebProvider, ConnectWallet } from "@thirdweb-dev/react";
+// import { ContractGraphic , BytecodeDisplay } from "./myContract";
+import TokenCalculator from "./TokenCalculator";
+//import DeployContract from "./DeployContract";
 
 function App() {
   return (
-    <ThirdwebProvider desiredChainId="rinkeby">
-      <div>
+    <ThirdwebProvider desiredChainId={11155111} clientId="7faaf41adc7f834cb26242041a178d63">
+      <div style={{ padding: "2rem" }}>
         <h1>My Crypto App</h1>
         <ConnectWallet />
-        <hr />
         <TokenCalculator />
-        <PresentValueCalculator/>
       </div>
     </ThirdwebProvider>
   );
