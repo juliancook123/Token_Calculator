@@ -3,7 +3,6 @@
 // It gracefully handles user cancellation (error code 4001) by returning a message.
 
 import { createWalletClient, custom } from 'viem';
-import { defineChain } from 'thirdweb/chains';
 
 /**
  * Deploys a contract to the blockchain using the provided parameters.

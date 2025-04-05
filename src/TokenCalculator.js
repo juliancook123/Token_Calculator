@@ -1,6 +1,5 @@
 // src/TokenCalculator.js
 import React, { useState } from "react";
-import { createWalletClient, custom } from "viem";
 import { defineChain } from "thirdweb/chains";
 import { deployContractBackend } from "./DeployContract"; // Import your backend deploy function
 import getABI from "./returnABI";
