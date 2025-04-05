@@ -2,7 +2,7 @@
 // This backend function deploys a contract using the viem wallet client and returns the deployed contract address.
 // It gracefully handles user cancellation (error code 4001) by returning a message.
 
-import { createWalletClient, custom } from 'viem';
+import { createWalletClient } from 'viem';
 
 /**
  * Deploys a contract to the blockchain using the provided parameters.
